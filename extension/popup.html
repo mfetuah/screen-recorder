@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Screenreel</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="icons/icon-32.png" width="24" height="24" alt="">
+    <h1>Screenreel</h1>
+  </header>
+
+  <section id="ready" hidden>
+    <button id="open" class="rec">Open recorder</button>
+    <p class="hint">Opens in a small window you can keep beside Zoom, Meet or Teams. Shortcut: <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd>.</p>
+    <button id="change" class="link">Change web address</button>
+  </section>
+
+  <form id="setup" hidden>
+    <label for="url">Your Screenreel web address</label>
+    <input id="url" type="url" required placeholder="https://yourname.github.io/screen-recorder/">
+    <p class="hint">The GitHub Pages address where you published Screenreel. See the README.</p>
+    <p id="err" class="err" hidden></p>
+    <button type="submit" class="primary">Save</button>
+  </form>
+
+<script src="popup.js"></script>
+</body>
+</html>

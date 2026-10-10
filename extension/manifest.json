@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Screenreel Recorder",
+  "version": "1.0.0",
+  "description": "One click to record your screen, meeting sound and microphone, with recordings sent to Google Drive.",
+  "icons": { "16": "icons/icon-16.png", "32": "icons/icon-32.png", "48": "icons/icon-48.png", "128": "icons/icon-128.png" },
+  "action": {
+    "default_title": "Screenreel Recorder",
+    "default_popup": "popup.html",
+    "default_icon": { "16": "icons/icon-16.png", "32": "icons/icon-32.png" }
+  },
+  "background": { "service_worker": "background.js" },
+  "permissions": ["storage"],
+  "commands": {
+    "open-recorder": {
+      "suggested_key": { "default": "Alt+Shift+R" },
+      "description": "Open the Screenreel recorder"
+    }
+  }
+}
